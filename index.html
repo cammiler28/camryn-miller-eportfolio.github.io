@@ -12,8 +12,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Additional meta tags for better SEO (optional) -->
-    <meta name="description" content="A professional ePortfolio showcasing my media production, editing, web development, and digital marketing skills, coded by myself using HTML and CSS.">
-    <meta name="author" content="Camryn Miller">
+    <meta name="description" content="My ePortfolio showcasing my projects and skills to potential employers.">
+    <meta name="author" content="Your Name">
+
+    <!-- Consistent desktop-like look on mobile -->
+    <style>
+      /* Keep consistent width */
+      header, nav, section, footer {
+        width: min(1100px, 92%);
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Fixed font sizing for all screens */
+      header h1 { font-size: 2.4rem; line-height: 1.2; }
+      header p  { font-size: 1.05rem; }
+      section h2 { font-size: 1.75rem; }
+      section p  { font-size: 1.05rem; }
+
+      /* Keep location images same size on all screens */
+      header .location {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        padding: 10px 12px;
+      }
+      header .location img[alt="Your Photo"] {
+        width: 140px; height: 140px; object-fit: cover; border-radius: 50%;
+      }
+      header .virginia-graphic {
+        width: 110px; height: 110px; object-fit: cover; border-radius: 12px;
+      }
+
+      /* Nav: horizontal layout always */
+      nav ul {
+        list-style: none;
+        margin: 0; padding: 10px;
+        display: flex; gap: 8px; justify-content: center;
+        flex-wrap: nowrap;
+      }
+      nav { overflow-x: auto; }
+      nav a {
+        white-space: nowrap;
+        font-weight: 700;
+        padding: 10px 14px;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+
+      /* Project cards & videos consistent */
+      #projects .project {
+        padding: 18px;
+        border-radius: 14px;
+        margin-bottom: 16px;
+      }
+      #projects video {
+        display: block;
+        width: 100%;
+        max-width: 720px;
+        height: auto;
+        border-radius: 12px;
+      }
+
+      @media (max-width: 768px) {
+        .main-container { padding: 0 16px; }
+        nav { margin-bottom: 20px; }
+        section { padding: 28px 20px; }
+        header .location { flex-direction: row; }
+      }
+    </style>
 </head>
 
 <body>
@@ -49,17 +117,15 @@
     <section id="projects">
         <h2>Projects</h2>
         
-        <!-- First project - Media Production Class Video -->
+        <!-- First project - Final Project -->
         <div class="project">
             <h3>Media Production Class Video</h3>
             <p>This project showcases a video edited in Adobe Premiere Pro, demonstrating my ability to produce high-quality content for clients.</p>
 
-            <!-- Embedded YouTube Video -->
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/U5R7YZFl1Zo" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
+            <!-- Embedded MP4 Video -->
+            <video width="640" height="360" controls>
+                <source src="Final_Project_Miller.mp4" type="video/mp4">
+            </video>
         </div>
 
         <!-- Second project - WordPress Website -->
@@ -75,6 +141,15 @@
             <p>I developed a WordPress website for a local business, improving their online presence and providing a user-friendly platform for their customers.</p>
             <a href="https://www.customembsp.com/" target="_blank">View Project</a>
         </div>
+
+        <!-- Fourth project - Digital Marketing Internship -->
+        <div class="project">
+            <h3>Digital Marketing Internship – Sunbelt Business Brokers of Roanoke & Lynchburg</h3>
+            <p>During my internship, I created, designed, and currently manage the firm's Substack publication. 
+               I also edited and produced all of the video content featured there, blending creative storytelling with 
+               professional marketing strategy.</p>
+            <a href="https://substack.com/@sunbeltroanoke" target="_blank">View the Sunbelt Roanoke Substack</a>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -88,10 +163,6 @@
     <footer>
         <p>&copy; 2025 Camryn Miller. All rights reserved.</p>
     </footer>
-</body>
-</html>
-
-
 </body>
 </html>
 
