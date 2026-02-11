@@ -2,168 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camryn Miller ePortfolio</title>
-    
-    <!-- Link to the new CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Camryn Miller – Digital Marketing & Social Media Specialist | Media Production Major">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Optional: Google Fonts for better typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- Additional meta tags for better SEO (optional) -->
-    <meta name="description" content="My ePortfolio showcasing my projects and skills to potential employers.">
-    <meta name="author" content="Your Name">
-
-    <!-- Consistent desktop-like look on mobile -->
-    <style>
-      /* Keep consistent width */
-      header, nav, section, footer {
-        width: min(1100px, 92%);
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      /* Fixed font sizing for all screens */
-      header h1 { font-size: 2.4rem; line-height: 1.2; }
-      header p  { font-size: 1.05rem; }
-      section h2 { font-size: 1.75rem; }
-      section p  { font-size: 1.05rem; }
-
-      /* Keep location images same size on all screens */
-      header .location {
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 18px;
-        padding: 10px 12px;
-      }
-      header .location img[alt="Your Photo"] {
-        width: 140px; height: 140px; object-fit: cover; border-radius: 50%;
-      }
-      header .virginia-graphic {
-        width: 110px; height: 110px; object-fit: cover; border-radius: 12px;
-      }
-
-      /* Nav: horizontal layout always */
-      nav ul {
-        list-style: none;
-        margin: 0; padding: 10px;
-        display: flex; gap: 8px; justify-content: center;
-        flex-wrap: nowrap;
-      }
-      nav { overflow-x: auto; }
-      nav a {
-        white-space: nowrap;
-        font-weight: 700;
-        padding: 10px 14px;
-        border-radius: 10px;
-        text-decoration: none;
-      }
-
-      /* Project cards & videos consistent */
-      #projects .project {
-        padding: 18px;
-        border-radius: 14px;
-        margin-bottom: 16px;
-      }
-      #projects video {
-        display: block;
-        width: 100%;
-        max-width: 720px;
-        height: auto;
-        border-radius: 12px;
-      }
-
-      @media (max-width: 768px) {
-        .main-container { padding: 0 16px; }
-        nav { margin-bottom: 20px; }
-        section { padding: 28px 20px; }
-        header .location { flex-direction: row; }
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Camryn Melissa Miller</h1>
-        <p>Media Specialist | Editor | Web Developer | Creative Designer | Brand Builder</p>
-        <div class="location">
-            <!-- Headshot image -->
-            <img src="headshot.jpg" alt="Your Photo" width="180" height="180">
-            
-            <!-- Virginia graphic image -->
-            <img src="va-graphic.jpg" alt="Virginia Map Graphic" class="virginia-graphic">
-        </div>
-    </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+    <h1>Camryn Melissa Miller</h1>
+    <p>Digital Marketing & Social Media Specialist | Media Production Major</p>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m majoring in Media Production with a minor in Management, combining a creative eye with strategic thinking. I have a genuine passion for video production and editing, and I thrive in roles that allow me to both lead and collaborate with others. My experience spans Adobe Premiere Suite, Microsoft Office Suite, web development, and effective communication, skills I continue to refine in my current digital marketing internship with Sunbelt Business Brokerage in Roanoke. I bring strong creative and organizational abilities to every project, turning ideas into impactful, well-executed results. Originally from Lynchburg, Virginia, I’ve also spent time in Indianapolis, Indiana, and Syracuse, New York, giving me a diverse perspective that shapes my approach to storytelling and design. My goal is to continue growing as a creative professional, producing high-quality work that connects with audiences and leaves a lasting impression.</p>
-    </section>
+    <div class="location">
+        <img src="headshot.jpg" alt="Headshot of Camryn Miller">
+        <img src="va-graphic.jpg" alt="Virginia Graphic" class="virginia-graphic">
+    </div>
+</header>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        
-        <!-- First project - Final Project -->
-        <div class="project">
-            <h3>Media Production Class Video</h3>
-            <p>This project showcases a video edited in Adobe Premiere Pro, demonstrating my ability to produce high-quality content for clients.</p>
+<nav>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-            <!-- Embedded MP4 Video -->
-            <video width="640" height="360" controls>
-                <source src="Final_Project_Miller.mp4" type="video/mp4">
-            </video>
-        </div>
+<section id="about">
+    <h2>About Me</h2>
 
-        <!-- Second project - WordPress Website -->
-        <div class="project">
-            <h3>WordPress Website</h3>
-            <p>A WordPress website done for a COMS226 class showcasing my Web Development, Adobe Suite Editing, and Photography skill sets.</p>
-            <a href="https://fearless-cmmiller2fffaa566a6.wordpress.com/" target="_blank">View Project</a>
-        </div>
-        
-        <!-- Third project - Website for Local Business -->
-        <div class="project">
-            <h3>Website for Local Business</h3>
-            <p>I developed a WordPress website for a local business, improving their online presence and providing a user-friendly platform for their customers.</p>
-            <a href="https://www.customembsp.com/" target="_blank">View Project</a>
-        </div>
+    <p>
+        I am a junior majoring in Media Production with a minor in Management, combining creative storytelling with strategic thinking and business insight. I began my professional journey as a Digital Marketing Intern and advanced into the role of Digital Marketing & Social Media Specialist, where I now oversee content creation, brand development, and digital communications for a professional brokerage firm.
+    </p>
 
-        <!-- Fourth project - Digital Marketing Internship -->
-        <div class="project">
-            <h3>Digital Marketing Internship – Sunbelt Business Brokers of Roanoke & Lynchburg</h3>
-            <p>During my internship, I created, designed, and currently manage the firm's Substack publication. 
-               I also edited and produced all of the video content featured there, blending creative storytelling with 
-               professional marketing strategy.</p>
-            <a href="https://substack.com/@sunbeltroanoke" target="_blank">View the Sunbelt Roanoke Substack</a>
-        </div>
-    </section>
+    <p>
+        My experience includes video production and editing in Adobe Premiere Pro, web development, content strategy, social media management, and digital infrastructure development. I enjoy building cohesive brand systems, designing strong visual identities, and translating business goals into impactful digital media.
+    </p>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:cmelissaj@outlook.com">cmelissaj@outlook.com</a></p>
-        <p>Follow me on <a href="https://www.linkedin.com/in/camryn-miller-772b5934a/" target="_blank">LinkedIn</a></p>
-    </section>
+    <p>
+        Originally from Lynchburg, Virginia, and having lived in Indianapolis and Syracuse, I bring a diverse perspective to storytelling and design. Outside of professional work, I am passionate about creative media, brand aesthetics, and continuous learning. My goal is to grow as a creative strategist who blends artistic vision with structured marketing execution.
+    </p>
+</section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Camryn Miller. All rights reserved.</p>
-    </footer>
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Media Production Class Video</h3>
+        <p>
+            This project showcases my ability to plan, shoot, and edit high-quality video content. It reflects my skills in cinematography, storytelling, pacing, and post-production editing using Adobe Premiere Pro.
+        </p>
+
+        <iframe 
+            src="https://www.youtube.com/embed/U5R7YZFl1Zo" 
+            title="Media Production Class Video"
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="project">
+        <h3>Christopher’s 38th Annual Video Contest Submission</h3>
+        <p>
+            Created for the Christopher’s 38th Annual Video Contest for college students, this scholarship-based submission highlights my cinematography, writing, production planning, and editing skills. The project was filmed and edited entirely on mobile, demonstrating adaptability, technical resourcefulness, and professional storytelling under constraints.
+        </p>
+
+        <iframe 
+            src="https://www.youtube.com/embed/I-ND9VLfhOI" 
+            title="Christopher's Video Contest Submission"
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="project">
+        <h3>Affiliate Referral Program Page – Mid-Atlantic Business Brokers</h3>
+        <p>
+            I fully designed and developed the Affiliate Referral Program landing page for Mid-Atlantic Business Brokers as their Digital Marketing & Social Media Specialist. I helped restructure and host the firm's website, integrated a custom referral form with email routing, and aligned the page with the company’s rebrand and digital growth strategy. This project demonstrates my ability to combine web development, UX layout, branding, and lead-generation infrastructure into a cohesive system.
+        </p>
+        <a href="https://midatlanticbusinessbrokers.com/affiliate-referral-program/" target="_blank">
+            View Live Page
+        </a>
+    </div>
+
+    <div class="project">
+        <h3>WordPress Website</h3>
+        <p>
+            A WordPress website created for a COMS226 class showcasing my web development, photography, and Adobe Creative Suite skill sets.
+        </p>
+        <a href="https://fearless-cmmiller2fffaa566a6.wordpress.com/" target="_blank">
+            View Project
+        </a>
+    </div>
+
+    <div class="project">
+        <h3>Website for Local Business</h3>
+        <p>
+            I developed a WordPress website for a local business, improving their online presence and creating a user-friendly platform tailored to their audience.
+        </p>
+        <a href="https://www.customembsp.com/" target="_blank">
+            View Project
+        </a>
+    </div>
+
+    <div class="project">
+        <h3>Digital Marketing & Social Media Specialist – Mid-Atlantic Business Brokers</h3>
+        <p>
+            I currently manage the firm’s content strategy, digital branding, and social media presence. My role evolved from Digital Marketing Intern to Specialist, reflecting increased responsibility in brand development, content production, and strategic marketing execution.
+        </p>
+        <a href="https://substack.com/@sunbeltroanoke" target="_blank">
+            View the Firm's Substack
+        </a>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:cmelissaj@outlook.com">cmelissaj@outlook.com</a></p>
+    <p><a href="https://www.linkedin.com/in/camryn-miller-772b5934a/" target="_blank">LinkedIn Profile</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Camryn Miller. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
-
-
