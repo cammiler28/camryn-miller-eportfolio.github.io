@@ -12,7 +12,6 @@ This site uses **HTML** for structure and **CSS** for styling, with a polished a
 - `styles.css` — Complete styling for all sections, including responsive design.
 - `headshot.jpg` — Profile image displayed in the header.
 - `va-graphic.jpg` — Virginia map graphic displayed in the header.
-- `Final_Project_Miller.mp4` — Embedded media project example.
 
 ## Key Features
 
