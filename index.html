@@ -1,288 +1,141 @@
-:root {
-  --bg: #f7f0ec;
-  --panel: #fffdfc;
-  --panel-2: #f2e2dc;
-  --text: #3a2620;
-  --muted: #7a5c52;
-  --accent: #a85d6b;
-  --accent-2: #d9a9a0;
-  --deep: #4e2f28;
-  --border: #e3cec4;
-  --shadow: 0 14px 34px rgba(78,47,40,.12);
-  --radius: 14px;
-  --radius-lg: 22px;
-  --column: 600px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Camryn Miller Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Camryn Miller – Marketing Coordinator & Broadcast Lead | Media Production">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
 
-/* Base reset */
-*, *::before, *::after { box-sizing: border-box; }
+<body>
 
-body {
-  margin: 0;
-  font-family: "Jost", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  line-height: 1.65;
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-}
+<!-- Soft blurred backdrop that fills the sides on wide screens -->
+<div class="backdrop" aria-hidden="true">
+    <img src="brown%20cardigan%20headshot%2C%20no%20teeth%20smile.JPG" alt="">
+</div>
 
-h1, h2, h3 {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  color: var(--deep);
-}
+<main class="column">
 
-/* ---------- Side backdrop ----------
-   A blurred, tinted copy of the headshot fills the whole window,
-   so on desktop the sides show soft color around the centered column. */
-.backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  overflow: hidden;
-  background: var(--panel-2);
-}
+    <header>
+        <div class="avatar">
+            <img src="brown%20cardigan%20headshot%2C%20no%20teeth%20smile.JPG" alt="Headshot of Camryn Miller">
+            <img src="va-graphic.jpg" alt="Virginia Graphic" class="virginia-graphic">
+        </div>
+        <h1>Camryn Miller</h1>
+        <p class="title">Marketing Coordinator / Technical Director &amp; Broadcast Lead</p>
 
-.backdrop img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(60px) saturate(1.1);
-  transform: scale(1.3);
-  opacity: 0.55;
-}
+        <ul class="socials">
+            <li>
+                <a href="mailto:cmelissaj@outlook.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/camryn-miller-772b5934a/" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z"/></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@SunbeltRoanokeLynchburg/featured" target="_blank" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.75 15.02V8.98L15.5 12z"/></svg>
+                </a>
+            </li>
+        </ul>
+    </header>
 
-.backdrop::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(247,240,236,.35), rgba(247,240,236,.75));
-}
+    <!-- Quick-link buttons, like a link-in-bio page -->
+    <nav class="links">
+        <a class="link-btn" href="#about">About me</a>
+        <a class="link-btn" href="#projects">Video &amp; audio projects</a>
+        <a class="link-btn" href="#events">Events</a>
+        <a class="link-btn" href="https://www.customembsp.com/" target="_blank">Website for local business</a>
+        <a class="link-btn" href="https://substack.com/@sunbeltroanoke" target="_blank">Sunbelt Business Brokers Substack</a>
+        <a class="link-btn" href="mailto:cmelissaj@outlook.com">Get in touch</a>
+    </nav>
 
-/* ---------- Centered column ---------- */
-.column {
-  width: min(var(--column), 92%);
-  margin: 0 auto;
-  padding: 56px 0 40px;
-}
+    <section id="about" class="card">
+        <h2>About</h2>
+        <p>
+            I'm a Media Production major (minoring in Management) at Radford University, where I blend creative storytelling with strategic marketing. As Marketing Coordinator for a regional brokerage firm, I lead social media strategy, video production, and email marketing, and support CRM development and web design. As Broadcast Technical Director for Radford's Esports Center, I direct live production for weekly broadcasts using vMix, OBS, and Stream Decks. My toolkit spans Adobe Premiere Pro, CapCut, DaVinci Resolve, Canva, and both camera and audio production, and I hold certifications including HubSpot Academy Inbound and Canva Essentials.
+        </p>
+    </section>
 
-/* ---------- Profile header ---------- */
-header {
-  text-align: center;
-  margin-bottom: 28px;
-}
+    <section id="projects">
+        <h2 class="group-heading">Projects</h2>
 
-.avatar {
-  position: relative;
-  display: inline-block;
-}
+        <article class="card project">
+            <iframe src="https://www.youtube.com/embed/U5R7YZFl1Zo" title="Media Production Class Video" frameborder="0" allowfullscreen></iframe>
+            <h3>Media Production Class Video</h3>
+            <p>This project showcases my ability to plan, shoot, and edit high-quality video content. It reflects my skills in cinematography, storytelling, pacing, and post-production editing using Adobe Premiere Pro.</p>
+        </article>
 
-.avatar img:first-child {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: 50% 30%;
-  border: 3px solid var(--panel);
-  box-shadow: 0 12px 30px rgba(78,47,40,.2);
-}
+        <article class="card project">
+            <iframe src="https://www.youtube.com/embed/assgO9eQtH4" title="Campus News Package" frameborder="0" allowfullscreen></iframe>
+            <h3>Campus News Package</h3>
+            <p>A news package created for my COMS 246 Audio Production course, highlighting a notable location on campus through an on-camera interview with someone connected to it. I developed the concept, filmed with a JVC camera, conducted the interview, and edited the final piece using multitrack editing in Adobe Premiere Pro to combine interview footage, natural sound, voiceover, and b-roll.</p>
+        </article>
 
-/* Virginia badge tucked onto the corner of the avatar */
-.avatar .virginia-graphic {
-  position: absolute;
-  right: -6px;
-  bottom: 2px;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--panel);
-  box-shadow: 0 4px 10px rgba(78,47,40,.18);
-}
+        <article class="card project">
+            <iframe src="https://www.youtube.com/embed/I-ND9VLfhOI" title="Christopher's Video Contest Submission" frameborder="0" allowfullscreen></iframe>
+            <h3>Christopher's 38th Annual Video Contest Submission</h3>
+            <p>Created for the Christopher's 38th Annual Video Contest for college students, this scholarship-based submission highlights my cinematography, writing, production planning, and editing skills. The project was filmed and edited entirely on mobile, demonstrating adaptability, technical resourcefulness, and professional storytelling under constraints.</p>
+        </article>
 
-header h1 {
-  margin: 16px 0 4px;
-  font-size: clamp(1.8rem, 5vw, 2.3rem);
-}
+        <article class="card project">
+            <iframe src="https://www.youtube.com/embed/wfuvgFkmAz0" title="This Lucky Life Podcast" frameborder="0" allowfullscreen></iframe>
+            <h3>This Lucky Life Podcast</h3>
+            <p>A midterm project for my COMS 246 Audio Production course, featuring an interview about a subject's luckiest life moment and how it shaped their perspective. Selected for Radford University's annual Media Production Showcase for its audio storytelling and production quality. I recorded the interview, wrote and performed voiceovers, and used multitrack editing in Adobe Premiere Pro to weave together audio, music, and sound effects into a polished listening experience.</p>
+        </article>
 
-header .title {
-  margin: 0 auto;
-  max-width: 34ch;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
+        <article class="card project">
+            <iframe src="https://www.youtube.com/embed/A30PFzLzXMQ" title="Undercover Underclassman TV Intro" frameborder="0" allowfullscreen></iframe>
+            <h3>Undercover Underclassman: 60-Second TV Intro</h3>
+            <p>A 60-second opening sequence for Undercover Underclassman, an original comedy series with a goofy spy-movie feel, created for my COMS 346/347 course. By day, the main character is an ordinary, nerdy college student; by night, he's a confident secret agent working undercover. Modeled on classic sitcom intros like The Golden Girls, the piece uses a montage of hypothetical moments from across the series to set up the characters, setting, and tone.</p>
+            <p>I developed the concept, filmed on a DSLR, and edited in Adobe Premiere Pro, cutting at least 15 distinct shots to a music bed that mixes secret-agent suspense with lighthearted humor. The assignment allowed no recorded sound from the footage and no color or exposure adjustments, required a fade from and to black with the music, and had to run exactly 60 seconds. Those limits pushed me to sell both the spy genre and the comedy through shot selection, pacing, and continuity alone.</p>
+        </article>
 
-.socials {
-  list-style: none;
-  padding: 0;
-  margin: 18px 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-}
+        <article class="card project">
+            <h3>Website for Local Business</h3>
+            <p>I developed a WordPress website for a local business, improving their online presence and creating a user-friendly platform tailored to their audience.</p>
+            <a class="link-btn small" href="https://www.customembsp.com/" target="_blank">View project</a>
+        </article>
 
-.socials a {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  color: var(--deep);
-  background: rgba(255,253,252,.7);
-  border: 1px solid var(--border);
-  transition: background .2s ease, color .2s ease;
-}
+        <article class="card project">
+            <iframe src="https://www.youtube.com/embed/-dXT7khoo1U" title="Sunbelt Business Brokers Video Example" frameborder="0" allowfullscreen></iframe>
+            <h3>Digital Marketing &amp; Social Media Specialist – Sunbelt Business Brokers of Roanoke and Lynchburg</h3>
+            <p>From October 6, 2025 to present, I have contributed to the firm's digital content and brand presence, first as a Digital Marketing Intern and later as a Digital Marketing &amp; Social Media Specialist. This progression reflects my growth in responsibility across content creation, visual branding, and strategic digital communication.</p>
+            <p>In this role, I have edited videos produced for the firm's YouTube channel, designed thumbnails, and at times written or supported script development for published video content. I also contributed to the channel's visual branding, including the profile banner, helping create a cohesive and professional look across the firm's digital platforms.</p>
+            <div class="btn-row">
+                <a class="link-btn small" href="https://www.youtube.com/@SunbeltRoanokeLynchburg/featured" target="_blank">View YouTube channel</a>
+                <a class="link-btn small" href="https://substack.com/@sunbeltroanoke" target="_blank">View the firm's Substack</a>
+            </div>
+        </article>
+    </section>
 
-.socials a:hover {
-  background: var(--accent);
-  color: var(--panel);
-}
+    <section id="events">
+        <h2 class="group-heading">Events</h2>
 
-.socials svg { width: 19px; height: 19px; }
+        <article class="card project">
+            <img class="event-photo" src="2026_media_showcase.jpg" alt="Presenters and faculty standing in front of screens reading 10th Annual Media Production Showcase, April 22, 2026">
+            <h3>10th Annual Media Production Showcase</h3>
+            <p class="event-meta">Radford University, April 22, 2026</p>
+            <p>Selected to present at Radford University's 10th Annual Media Production Showcase, hosted by <a href="https://www.linkedin.com/in/michael-meindl/" target="_blank">Michael Meindl</a> and <a href="https://www.linkedin.com/in/matthew-turner-345b57a/" target="_blank">Matthew Turner</a>. The featured work was This Lucky Life, a podcast midterm project from COMS 246 Audio Production, presented alongside fellow Media Production students.</p>
+        </article>
+    </section>
 
-/* ---------- Stacked link buttons ---------- */
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 36px;
-}
+    <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:cmelissaj@outlook.com">cmelissaj@outlook.com</a></p>
+        <p><a href="https://www.linkedin.com/in/camryn-miller-772b5934a/" target="_blank">LinkedIn profile</a></p>
+    </section>
 
-.link-btn {
-  display: block;
-  text-align: center;
-  padding: 15px 20px;
-  border-radius: 999px;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  color: var(--deep);
-  font-weight: 500;
-  text-decoration: none;
-  box-shadow: 0 6px 16px rgba(78,47,40,.08);
-  transition: transform .15s ease, background .2s ease, color .2s ease;
-}
+    <footer>
+        <p>&copy; 2026 Camryn Miller. All rights reserved.</p>
+    </footer>
 
-.link-btn:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--panel);
-  transform: scale(1.02);
-}
+</main>
 
-.link-btn.small {
-  display: inline-block;
-  padding: 9px 18px;
-  font-size: 0.92rem;
-}
-
-.btn-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-}
-
-/* ---------- Cards ---------- */
-.card {
-  background: rgba(255,253,252,.92);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 22px;
-  margin-bottom: 18px;
-  box-shadow: var(--shadow);
-}
-
-section { scroll-margin-top: 20px; }
-
-section h2 {
-  margin: 0 0 10px;
-  font-size: 1.35rem;
-}
-
-.group-heading {
-  text-align: center;
-  margin: 8px 0 16px;
-}
-
-section p {
-  color: var(--muted);
-  margin: 0 0 12px;
-}
-
-section p:last-child { margin-bottom: 0; }
-
-.project h3 {
-  margin: 14px 0 6px;
-  font-size: 1.1rem;
-  line-height: 1.35;
-}
-
-.project h3:first-child { margin-top: 0; }
-
-.project iframe {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-  border-radius: var(--radius);
-}
-
-/* ---------- Events ---------- */
-.event-photo {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-}
-
-.event-meta {
-  margin: 0 0 8px;
-  font-size: 0.9rem;
-  color: var(--accent);
-}
-
-/* Inline text links inside cards (not the pill buttons) */
-.project p a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid var(--accent-2);
-}
-
-.project p a:hover {
-  color: var(--deep);
-  border-color: var(--deep);
-}
-
-/* ---------- Contact ---------- */
-#contact { text-align: center; }
-
-#contact a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid var(--accent-2);
-}
-
-#contact a:hover {
-  color: var(--deep);
-  border-color: var(--deep);
-}
-
-/* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.85rem;
-  padding-top: 12px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .link-btn { transition: none; }
-  .link-btn:hover { transform: none; }
-}
+</body>
+</html>
