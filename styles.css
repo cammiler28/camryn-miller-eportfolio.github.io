@@ -83,6 +83,7 @@ header {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 50% 30%;
   border: 3px solid var(--panel);
   box-shadow: 0 12px 30px rgba(78,47,40,.2);
 }
@@ -229,6 +230,33 @@ section p:last-child { margin-bottom: 0; }
   aspect-ratio: 16 / 9;
   border: 0;
   border-radius: var(--radius);
+}
+
+/* ---------- Events ---------- */
+.event-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.event-meta {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+/* Inline text links inside cards (not the pill buttons) */
+.project p a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid var(--accent-2);
+}
+
+.project p a:hover {
+  color: var(--deep);
+  border-color: var(--deep);
 }
 
 /* ---------- Contact ---------- */
