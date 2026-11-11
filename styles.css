@@ -232,6 +232,17 @@ section p:last-child { margin-bottom: 0; }
   border-radius: var(--radius);
 }
 
+/* ---------- Design pieces (tall banners, posters) ---------- */
+.design-photo {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 22px rgba(78,47,40,.15);
+}
+
 /* ---------- Events ---------- */
 .event-photo {
   display: block;
